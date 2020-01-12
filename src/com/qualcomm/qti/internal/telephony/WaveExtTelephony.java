@@ -509,6 +509,24 @@ public class WaveExtTelephony extends IExtTelephony.Stub {
     }
 
     @Override
+    public Token queryNrIconType(int slotId, Client client) {
+        // I hope we don't use this
+        return new Token(-1);
+    }
+
+    @Override
+    public Token queryEndcStatus(int slotId, Client client) {
+        // I hope we don't use this
+        return new Token(-1);
+    }
+
+    @Override
+    public Token enableEndc(int slotId, boolean enable, Client client) {
+        // I hope we don't use this
+        return new Token(-1);
+    }
+
+    @Override
     public Token queryNrBearerAllocation(int slotId, Client client) {
         // I hope we don't use this
         return new Token(-1);
